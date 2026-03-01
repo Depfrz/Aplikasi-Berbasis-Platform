@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan Praktik Pemrograman Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html { height: 100%; margin: 0; padding: 0; overflow: hidden; }
+        .main-table { width: 100%; height: 100%; border-collapse: collapse; }
+        td { border: 0; padding: 0; }
+        iframe { width: 100%; height: 100%; border: none; display: block; }
+        .row-header { height: 15%; }
+        .row-main { height: 75%; }
+        .row-footer { height: 10%; }
+        .col-side { width: 20%; }
+        .col-content { width: 60%; }
+    </style>
+</head>
+<body>
+    <table class="main-table">
+        <!-- Baris 1: Header (3 kolom digabung) -->
+        <tr class="row-header">
+            <td colspan="3">
+                <iframe src="header.html" scrolling="no"></iframe>
+            </td>
+        </tr>
+        
+        <!-- Baris 2: Menu, Content, Right Sidebar (3 kolom terpisah) -->
+        <tr class="row-main">
+            <td class="col-side">
+                <iframe src="menu.html"></iframe>
+            </td>
+            <td class="col-content">
+                <iframe name="mainContent" src="content.html"></iframe>
+            </td>
+            <td class="col-side">
+                <iframe src="right_sidebar.html"></iframe>
+            </td>
+        </tr>
+        
+        <!-- Baris 3: Footer (3 kolom digabung) -->
+        <tr class="row-footer">
+            <td colspan="3">
+                <iframe src="footer.html" scrolling="no"></iframe>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

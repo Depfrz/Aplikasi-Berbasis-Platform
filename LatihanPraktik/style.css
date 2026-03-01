@@ -1,0 +1,118 @@
+/* Global styles based on requirements */
+body {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    line-height: 1;
+    background-color: #f0f0f0; /* Default background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* All text requirement: Arial Narrow, 10pt, bold, line-height 1 */
+* {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Titles - override global */
+.main-title {
+    font-size: 36pt !important;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sub-title {
+    font-size: 16pt !important;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Table-based menu with 3D button effect */
+.menu-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.menu-item {
+    background-color: #ffff00; /* Yellow from image */
+    text-align: center;
+    border: 3px outset #ccc; /* 3D effect */
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.menu-item:active {
+    border-style: inset;
+}
+
+.menu-header {
+    background-color: #0000ff; /* Blue header from image */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12pt;
+}
+
+/* Iframe and Layout */
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-area {
+    background-color: #0066cc;
+    padding: 20px;
+    height: 120px;
+}
+
+.footer-area {
+    background-color: #0066cc;
+    padding: 10px;
+    color: white;
+    height: 60px;
+}
+
+.main-layout-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.side-area {
+    background-color: #999999;
+    width: 20%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.content-area {
+    background-color: white;
+    width: 60%;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.right-area {
+    background-color: #cccccc;
+    width: 20%;
+    vertical-align: top;
+    padding: 10px;
+    text-align: center;
+}
