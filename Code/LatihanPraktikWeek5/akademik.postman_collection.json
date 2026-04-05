@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "8a7c6f5d-4e3d-2c1b-a0b9-876543210fed",
+		"name": "Sistem Akademik API",
+		"description": "API Collection for Matakuliah Resource in Sistem Akademik",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Matakuliah",
+			"item": [
+				{
+					"name": "List Matakuliah",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/matakuliah",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"matakuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Matakuliah",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"kode_mk\": \"CS101\",\n    \"nama\": \"Algoritma dan Pemrograman\",\n    \"sks\": 3,\n    \"dosen_ids\": [1, 2]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/matakuliah",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"matakuliah"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000"
+		},
+		{
+			"key": "token",
+			"value": "PASTE_YOUR_SANCTUM_TOKEN_HERE"
+		}
+	]
+}
